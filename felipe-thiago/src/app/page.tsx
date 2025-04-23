@@ -1,33 +1,42 @@
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      
+    <div>
+      <nav className="bg-blue-500 grid grid-cols-10 gap-4">
+      <ul className="inline-flex space-x-15 col-start-7 col-end-10">
+        <li className="">Início</li>
+        <li>Projeto</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+      <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    
+
+
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div className="container">
-      <a className="navbar-brand" href="#">Felipe Thiago</a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
-            <a className="nav-link active" href="#sobre">Sobre</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#habilidades">Habilidades</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#projetos">Projetos</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#contato">Contato</a>
-          </li>
-        </ul>
+      <div className="container">
+        <a className="navbar-brand" href="#">Felipe Thiago</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link active" href="#sobre">Sobre</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <section id="sobre" className="py-5 bg-light">
     <div className="container">
@@ -125,7 +134,9 @@ export default function Home() {
   </footer>
 
   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
     </div>
+    </div>
+    
   );
 }
