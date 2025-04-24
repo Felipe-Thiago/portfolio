@@ -1,80 +1,65 @@
-
+import Image from "next/image"
 export default function Home() {
+
   return (
-    <div>
-      <nav className="bg-blue-500 grid grid-cols-10 gap-4">
-      <ul className="inline-flex space-x-15 col-start-7 col-end-10">
-        <li className="">Início</li>
-        <li>Projeto</li>
-        <li>Contato</li>
-      </ul>
-    </nav>
-      <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div id="main" className="grid font-[family-name:var(--font-geist-sans)]">
+      <nav className="top-0 right-0 left-0 bg-blue-500 flex flex-wrap place-content-between text-xl cursor-default">
+        <span className="p-5 md:ml-10"><a>&lt;Felipe/&gt;</a></span>
+        <ul className="flex flex-wrap place-content-end">
+          <a href="#sobre"><li className="p-5 hover:font-bold">Início</li></a>
+          <a href="#projetos"><li className="p-5 hover:font-bold">Projetos</li></a>
+          <a href="#redes"><li className="p-5 hover:font-bold">Contato</li></a>
+        </ul>
+      </nav>
+      
     
-
-
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
-        <a className="navbar-brand" href="#">Felipe Thiago</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a className="nav-link active" href="#sobre">Sobre</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#habilidades">Habilidades</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#projetos">Projetos</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contato">Contato</a>
-            </li>
-          </ul>
+      <section id="intro" className="">
+        <div className="">
+          <h1 className="text-6xl text-blue-600 mt-10 mb-1"><span className="text-gray-600">&lt;</span>Felipe Thiago <span className="text-gray-600">/&gt;</span></h1>
+          <h2 className="text-green-700">&lt;!&ndash;&ndash; Desenvolvedor de Software &ndash;&ndash;&gt;</h2>
         </div>
-      </div>
-    </nav>
-
-  <section id="sobre" className="py-5 bg-light">
-    <div className="container">
-      <div className="row text-center">
-        <div className="col">
-            <h1>Felipe Thiago</h1>
-            <h2>Sobre Mim</h2>
-            <p>Olá! Sou Felipe, estudante de Desenvolvimento de Software Multiplataforma na Fatec Votorantim.</p>
+        <div className="relative size-52 top-8">
+          <Image src="/images/felipe.jpg" alt={"Felipe"} fill className="rounded-3xl"/>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+
+      <section id="sobre" className="py-5 bg-neutral-700">
+        <div className="container">
+          <div className="row text-center">
+            <div className="col">
+                <h1>Felipe Thiago</h1>
+                <h2>Sobre Mim</h2>
+                <p>Olá! Sou Felipe, estudante de Desenvolvimento de Software Multiplataforma na Fatec Votorantim.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
   
-  <section id="projeto" className="py-5">
-    <div className="container">
-        <h2 className="text-center">Principais Projetos</h2>
-        <div className="row">
-            <div className="col">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Recycle Hub</h5>
-                        <p className="card-text"></p>
+      <section id="projeto" className="py-5">
+        <div className="container">
+            <h2 className="text-center">Principais Projetos</h2>
+            <div className="row">
+                <div className="col">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Recycle Hub</h5>
+                            <p className="card-text"></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="col">
-                <div className="card">
-                    {/* <Image src="https://live.staticflickr.com/65535/52561898110_1de5af0c59.jpg" className="card-img-top img-fluid" alt="Projeto Compras" /> */}
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Projeto Compras</h5>
-                        <p className="card-text">teste</p>
+                <div className="col">
+                    <div className="card">
+                        {/* <Image src="https://live.staticflickr.com/65535/52561898110_1de5af0c59.jpg" className="card-img-top img-fluid" alt="Projeto Compras" /> */}
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Projeto Compras</h5>
+                            <p className="card-text">teste</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  </section>
+      </section>
 
   
   <section id="projetos" className="py-5 bg-light">
@@ -136,7 +121,7 @@ export default function Home() {
   
   
     </div>
-    </div>
+    
     
   );
 }
