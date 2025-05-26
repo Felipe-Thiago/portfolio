@@ -19,15 +19,15 @@ const Sobre = () => {
                             <FaReact /> <FaDocker /> <FaFigma /> <SiTypescript /> <SiMongodb />
                         </div>
 
-                        <div className="flex justify-center content-center md:gap-32 gap-12 mt-5 md:pt-32 border-l">
-                            <a href="https://github.com/Felipe-Thiago" target="_blank">
+                        <div className="flex justify-center content-center md:gap-32 gap-12 pt-12 border-l">
+                            <a href="https://github.com/Felipe-Thiago" target="_blank" className="p-3 rounded-3xl hover:bg-gray-800">
                                 <FaGithub className="text-4xl"/>
                             </a> 
-                            <a href="https://www.linkedin.com/in/felipe-thiago-779797219/" target="_blank">
+                            <a href="https://www.linkedin.com/in/felipe-thiago-779797219/" target="_blank" className="p-3 rounded-3xl hover:bg-gray-800">
                                 <FaLinkedin className="text-4xl"/>    
                             </a>
                 
-                            <a href="mailto:felipethiagodasilva@gmail.com">
+                            <a href="mailto:felipethiagodasilva@gmail.com" className="p-3 rounded-3xl hover:bg-gray-800">
                                 <CiMail className="text-4xl"/>
                             </a>
                         </div>
