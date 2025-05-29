@@ -14,7 +14,7 @@ const Experiencia = () => {
                 <div className="my-5">
                     <Accordion defaultValue="etec">
                         <Accordion.Item value="etec">
-                            <Accordion.Trigger className="flex flex-col md:flex-row w-full justify-between items-center gap-5 px-5 rounded-t-2xl bg-blue-900 group-data-[open=false]:rounded-2xl">
+                            <Accordion.Trigger className="flex flex-col md:flex-row w-full justify-between items-center gap-5 px-5 rounded-t-2xl bg-blue-900 group-data-[open=false]:rounded-2xl cursor-pointer">
                                 <p className="text-blue-400 font-bold">Técnico em Desenvolvimento de Sistemas </p>
                                 
                                 <div className="flex flex-col items-end">
@@ -22,7 +22,7 @@ const Experiencia = () => {
                                     <p className="text-gray-500">2020-2022</p>
                                 </div>
                             </Accordion.Trigger>
-                            <Accordion.Content className="p-5 pb-5 bg-neutral-800 rounded-b-2xl content-center justify-center">
+                            <Accordion.Content className="cursor-default p-5 pb-5 bg-neutral-800 rounded-b-2xl content-center justify-center">
                                 Durante meu curso técnico pela ETEC de forma EaD, participei do projeto que determinou a entrega de meu TCC. Durante esse período, nos aprofundamos na metodologia Scrum, e tive a oportunidade de representar o grupo como Scrum Master, servindo como um representante mediando o trabalho em equipe. 
                             </Accordion.Content>
                             <IoIosArrowDown className="h-4 w-4 group-data-[open=true]:rotate-180"/>
@@ -32,7 +32,7 @@ const Experiencia = () => {
                 
                 <Accordion defaultValue="fatec">
                     <Accordion.Item value="fatec">
-                        <Accordion.Trigger className="flex flex-col md:flex-row w-full justify-between items-center gap-5 px-5 rounded-t-2xl bg-blue-900 group-data-[open=false]:rounded-2xl">
+                        <Accordion.Trigger className="cursor-pointer flex flex-col md:flex-row w-full justify-between items-center gap-5 px-5 rounded-t-2xl bg-blue-900 group-data-[open=false]:rounded-2xl">
                             <p className="text-blue-400 font-bold">Desenvolvedor de Software Multiplataforma</p>
                             
                             <div className="flex flex-col items-end">
@@ -40,7 +40,7 @@ const Experiencia = () => {
                                 <p className="text-gray-500">2023-hoje</p>
                             </div>
                         </Accordion.Trigger>
-                        <Accordion.Content className="p-5 pb-5 bg-neutral-800 rounded-b-2xl content-center justify-center">
+                        <Accordion.Content className="cursor-default p-5 pb-5 bg-neutral-800 rounded-b-2xl content-center justify-center">
                             Durante meu curso técnico pela ETEC de forma EaD, participei do projeto que determinou a entrega de meu TCC. Durante esse período, nos aprofundamos na metodologia Scrum, e tive a oportunidade de representar o grupo como Scrum Master, servindo como um representante mediando o trabalho em equipe. 
                         </Accordion.Content>
                         <IoIosArrowDown className="h-4 w-4 group-data-[open=true]:rotate-180"/>
