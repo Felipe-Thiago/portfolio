@@ -22,7 +22,7 @@ const Experiencia = () => {
                                 </div>
                             </Accordion.Trigger>
                             <Accordion.Content className="cursor-default p-5 pb-5 bg-neutral-800 rounded-b-2xl content-center justify-center">
-                                Durante meu curso técnico pela ETEC de forma EaD, participei do projeto que determinou a entrega de meu TCC. Durante esse período, nos aprofundamos na metodologia Scrum, e tive a oportunidade de representar o grupo como Scrum Master, servindo como um representante mediando o trabalho em equipe. 
+                                Durante meu curso técnico pela ETEC de forma EaD participei do projeto que determinou a entrega de meu TCC. Durante esse período, nos aprofundamos na metodologia Scrum, e tive a oportunidade de representar o grupo como Scrum Master, servindo como um representante mediando o trabalho em equipe. 
                             </Accordion.Content>
                             <IoIosArrowDown className="h-4 w-4 group-data-[open=true]:rotate-180"/>
                         </Accordion.Item>
@@ -40,7 +40,7 @@ const Experiencia = () => {
                             </div>
                         </Accordion.Trigger>
                         <Accordion.Content className="cursor-default p-5 pb-5 bg-neutral-800 rounded-b-2xl content-center justify-center">
-                            Durante meu curso técnico pela ETEC de forma EaD, participei do projeto que determinou a entrega de meu TCC. Durante esse período, nos aprofundamos na metodologia Scrum, e tive a oportunidade de representar o grupo como Scrum Master, servindo como um representante mediando o trabalho em equipe. 
+                            Na Fatec me aprofundei em uma variação maior de tecnologias. Devido ao tempo dedicado, acabei encontrando um conteúdo muito mais rico em relação à metodologia Scrum e às linguagens de programação, aplicando na prática ideias de trabalho em equipe e planejamento e desenvolvimento de um software.  
                         </Accordion.Content>
                         <IoIosArrowDown className="h-4 w-4 group-data-[open=true]:rotate-180"/>
                     </Accordion.Item>
