@@ -4,7 +4,6 @@ import * as React from 'react';
 import { IoIosArrowDown } from "react-icons/io";
 
 const Experiencia = () => {
-    const [isOpen, setIsOpen] = React.useState(false);
 
     return (
         <section id="experiencia" className="pt-12 mt-60 md:my-15 flex items-center justify-center">
@@ -12,7 +11,7 @@ const Experiencia = () => {
                 <h2 className="text-3xl text-amber-200 mb-8">Experiência Acadêmica</h2>
 
                 <div className="my-5">
-                    <Accordion defaultValue="etec">
+                    <Accordion>
                         <Accordion.Item value="etec">
                             <Accordion.Trigger className="flex flex-col md:flex-row w-full justify-between items-center gap-5 px-5 rounded-t-2xl bg-blue-900 group-data-[open=false]:rounded-2xl cursor-pointer">
                                 <p className="text-blue-400 font-bold">Técnico em Desenvolvimento de Sistemas </p>
@@ -30,7 +29,7 @@ const Experiencia = () => {
                     </Accordion>
                 </div>
                 
-                <Accordion defaultValue="fatec">
+                <Accordion>
                     <Accordion.Item value="fatec">
                         <Accordion.Trigger className="cursor-pointer flex flex-col md:flex-row w-full justify-between items-center gap-5 px-5 rounded-t-2xl bg-blue-900 group-data-[open=false]:rounded-2xl">
                             <p className="text-blue-400 font-bold">Desenvolvedor de Software Multiplataforma</p>
