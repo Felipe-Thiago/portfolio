@@ -1,18 +1,58 @@
+"use client";
 import Image from "next/image";
 import { FaReact, FaFigma, FaGithub, FaHtml5, FaCss3Alt, FaGoogleDrive, FaPhp } from "react-icons/fa";
 import { SiTypescript, SiMongodb, SiEdgeimpulse } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { DiMysql } from "react-icons/di";
+import { useState } from "react";
 
 const Projetos = () => {
+
+    const [expandido, setExpandido] = useState<number | null>(null);
+
     return (
         <section id="projetos" className="py-12 my-15 flex items-center justify-center">
             <div className="mx-12 w-2/3 ">
                 <h2 className="text-3xl text-amber-200 mb-8">Principais Projetos</h2>
 
                 <div className="md:grid md:grid-cols-2 gap-4">
-                    <div className="max-w-sm rounded bg-neutral-900 overflow-hidden shadow-gray-900 shadow-2xl">
+                    <div className={`relative max-w-sm rounded bg-neutral-900 overflow-hidden shadow-gray-900 shadow-2xl transition-all duration-300
+                        ${expandido === 1 ? "md:col-span-2 md:max-w-full" : ""} flex flex-col`}>
+                        
+                        <div className={`transition-all duration-300 ${expandido === 1 ? "w-16 h-16 rounded-full overflow-hidden absolute top-4 left-4 z-10 border-2 border-blue-700 bg-neutral-900" : "md:h-64 w-full relative rounded-none bg-transparent border-none"}`}>
+                            <Image className={`object-cover transition-all duration-300 ${expandido === 1 ? "w-16 h-16 rounded-full" : "w-full h-full rounded-none"}`} src={"/images/slide-1.jpg"} width={expandido === 1 ? 64 : 385} height={expandido === 1 ? 64 : 230} alt="Imagem"/>
+                        </div>
+
+                        <div className={`px-6 py-4 ${expandido === 1 ? "pt-20" : ""} flex-l flex flex-col`}>
+                            <div className="font-bold text-xl mb-2">Projeto Integrador I - RecycleHub</div>
+                            <div className="text-gray-500 text-base flex-1">
+                                {expandido === 1 ? <div className="text-gray-500 text-base overflow-auto">
+                                    <p>Este projeto foi realizado no primeiro semestre da Fatec e se define como uma plataforma de troca e comunicação entre compradores e vendedores de matéria-prima sucateada.</p> <br />
+                                    <p>Teve inspiração em sites de e-commerce, mas se concentrava em ser um ponto em comum que pessoas com necessidades diferentes podiam se encontrar. Tinha por objetivo atender alguns dos 7 tópicos da ODS da ONU, com uma proposta de colaborar com a cidade e o meio-ambiente na reciclagem e no crescimento econômico.</p>
+                                </div> : 
+                                <p className="text-2xl">Plataforma de troca de sucata</p>}
+                            </div>
+                            <button
+                                className="mt-2 px-4 py-2 bg-blue-700 text-white rounded self-start"
+                                onClick={() => setExpandido(expandido === 1 ? null : 1)}
+                            >
+                                {expandido === 1 ? "Fechar" : "Saiba mais"}
+                            </button>
+                            
+                        </div>
+                        <div className="pt-4 pb-2 flex items-center flex-wrap gap-2 mt-auto">
+                                <a className="inline-block bg-gray-200 rounded-full px-5 py-2 text-sm font-semibold text-gray-700 mr-2" href="https://www.figma.com/design/g0xJmkRelJLilkSA9Igxmb/Untitled?node-id=0-1&t=uw2mok2Y9ljogHaA-1" target="_blank"><FaFigma /></a>
+                                <a className="inline-block bg-gray-200 rounded-full px-5 py-2 text-sm font-semibold text-gray-700 mr-2" href="https://github.com/Felipe-Thiago/ProjetoSemestre" target="_blank"><FaGithub /></a>
+                                <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><FaHtml5 /></span>
+                                <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><FaCss3Alt /></span> 
+                                <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><IoLogoJavascript /></span> 
+                                <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><DiMysql /></span>  
+                            </div>
+
+                    </div>
+                    
+                    {/* <div className="max-w-sm rounded bg-neutral-900 overflow-hidden shadow-gray-900 shadow-2xl">
                         <div className="md:h-64">
                             <Image className="object-none" src={"/images/slide-1.jpg"} width={385} height={230} alt="Imagem"/>
                         </div>
@@ -35,7 +75,50 @@ const Projetos = () => {
                             <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><IoLogoJavascript /></span> 
                             <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><DiMysql /></span>
                         </div>
+                    </div> */}
+
+
+                    <div className={`relative max-w-sm rounded bg-neutral-900 overflow-hidden shadow-gray-900 shadow-2xl transition-all duration-300
+                        ${expandido === 2 ? "md:col-span-2 md:max-w-full" : ""} flex flex-col`}>
+                        
+                        <div className={`transition-all duration-300 ${expandido === 2 ? "w-16 h-16 rounded-full overflow-hidden absolute top-4 left-4 z-10 border-2 border-blue-700 bg-neutral-900" : "md:h-64 w-full relative rounded-none bg-transparent border-none"}`}>
+                            <Image className={`object-cover transition-all duration-300 ${expandido === 2 ? "w-16 h-16 rounded-full" : "w-full h-full rounded-none"}`} src={"/images/slide-1.jpg"} width={expandido === 2 ? 64 : 385} height={expandido === 2 ? 64 : 230} alt="Imagem"/>
+                        </div>
+
+                        <div className={`px-6 py-4 ${expandido === 2 ? "pt-20" : ""}`}>
+                            <div className="font-bold text-xl mb-2">Projeto Integrador II - Projeto Compras</div>
+                            <div className="text-gray-500 text-base h-30 flex-1">
+                                {expandido === 2 ? <div className="text-gray-500 text-base overflow-auto h-30">
+                                    <p>Este projeto ainda está sendo desenvolvido e acontece em uma colaboração entre os alunos da Fatec e a própria Fatec para ajudar com necessidades encontradas na secretaria. 
+                                </p><br />
+                                <p>Consiste em um sistema de concentração dos pedidos de compras de materiais realizados pelos funcionários da Fatec à diretora de serviços administrativos, que antes eram feitos de forma verbal e sem histórico.</p>
+                                </div> : 
+                                <p className="text-2xl">Plataforma de pedidos de compras da Fatec</p>}
+                            </div>
+                            <button
+                                className="mt-2 px-4 py-2 bg-blue-700 text-white rounded"
+                                onClick={() => setExpandido(expandido === 1 ? null : 1)}
+                            >
+                                {expandido === 2 ? "Fechar" : "Saiba mais"}
+                            </button>
+                            <div className="pt-4 pb-2 flex items-center flex-wrap gap-2 mt-auto">
+                            
+                                    <a className="inline-block bg-gray-200 rounded-full px-5 py-2 text-sm font-semibold text-gray-700 mr-2" href="https://www.figma.com/design/g0xJmkRelJLilkSA9Igxmb/Untitled?node-id=0-1&t=uw2mok2Y9ljogHaA-1" target="_blank"><FaFigma /></a>
+                                    <a className="inline-block bg-gray-200 rounded-full px-5 py-2 text-sm font-semibold text-gray-700 mr-2" href="https://github.com/Felipe-Thiago/ProjetoSemestre" target="_blank"><FaGithub /></a>
+                                    
+                            </div>
+                            <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><FaHtml5 /></span>
+                                    <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><FaCss3Alt /></span> 
+                                    <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><IoLogoJavascript /></span> 
+                                    <span className="inline-block text-white px-5 py-2 text-lg bg-blue-700 rounded-lg font-semibold mr-2"><DiMysql /></span>
+
+                            
+
+                        </div>
+
                     </div>
+
+
 
                     <div className="max-w-sm rounded bg-neutral-900 overflow-hidden shadow-gray-900 shadow-2xl">
                         <div className="h-64 w-full relative">
