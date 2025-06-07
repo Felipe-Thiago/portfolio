@@ -7,7 +7,7 @@ const Header = () => {
         <ul className="flex flex-wrap place-content-end">
           <a href="#sobre"><li className="p-5 hover:font-bold">Sobre</li></a>
           <a href="#projetos"><li className="p-5 hover:font-bold">Projetos</li></a>
-          <a href="#redes"><li className="p-5 hover:font-bold">Contato</li></a>
+          {/* <a href="#redes"><li className="p-5 hover:font-bold">Contato</li></a> */}
         </ul>
       </nav>
     )
