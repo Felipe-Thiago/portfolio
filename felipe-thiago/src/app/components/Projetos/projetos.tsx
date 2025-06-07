@@ -110,10 +110,7 @@ const Projetos = () => {
                         ${expandido === 3 ? "md:col-span-2 md:max-w-full" : ""} flex flex-col`}>
                         
                         <div className={`${expandido === 3 ? "w-16 h-16 rounded-full overflow-hidden absolute top-4 left-4 z-10 border-2 border-blue-700 bg-neutral-900" : "md:h-64 w-full relative rounded-none bg-transparent border-none"}`}>
-                            <a href="http://front-end-five-kappa.vercel.app/" target="_blank">
-                                <Image className={`object-cover  ${expandido === 3 ? "w-16 h-16 rounded-full" : "w-full h-full rounded-none"}`} src={"/images/tecnoclass.png"} width={expandido === 3 ? 64 : 385} height={expandido === 3 ? 64 : 230} alt="TecnoClass"/>
-                            </a>
-                            
+                            <Image className={`object-cover  ${expandido === 3 ? "w-16 h-16 rounded-full" : "w-full h-full rounded-none"}`} src={"/images/tecnoclass.png"} width={expandido === 3 ? 64 : 385} height={expandido === 3 ? 64 : 230} alt="TecnoClass"/>
                         </div>
 
                         <div className={`px-6 py-4 ${expandido === 3 ? "pt-20" : ""} flex-l flex flex-col transition-all duration-300`}>
