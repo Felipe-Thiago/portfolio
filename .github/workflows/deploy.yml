@@ -141,7 +141,7 @@ jobs:
       - name: Inserir versão no App.js
         if: steps.version.outputs.should_deploy == 'true'
         run: |
-          echo "🔧 Inserindo versão no src/App.js"
+          echo "🔧 Inserindo versão no src/app/page.tsx"
           VERSION=${{ steps.version.outputs.new_version }}
 
           # Substituir ou adicionar linha com a versão
@@ -150,7 +150,7 @@ jobs:
               <Col>\
                 <p style={{ textAlign: "center", fontStyle: "italic" }}>Versão: '"$VERSION"'</p>\
               </Col>\
-            </Row>' src/App.js
+            </Row>' src/app/page.tsx
 
           echo "✅ Versão $VERSION inserida no frontend"
 
