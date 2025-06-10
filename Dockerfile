@@ -2,7 +2,7 @@
 FROM node:18-alpine as build
 
 # Diretório de trabalho dentro do container
-WORKDIR /src/app
+WORKDIR /app
 
 # Copia os arquivos de dependências
 COPY package*.json ./
